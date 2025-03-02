@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="May Sue Case Management Services - Physical Therapy, Occupational Therapy, and Case Management">
+  <meta name="keywords" content="case management, physical therapy, occupational therapy, healthcare, patient care, rehabilitation">
+  <title>Our Services | May Sue Case Management</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/services.css">
+  
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="/images/May_Sue.png" alt="May Sue Case Management Logo">
+        <h1>May Sue Case Management</h1>
+      </div>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="/#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="/#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="/#contact" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Services Hero -->
+  <section class="hero" style="padding: 80px 0;">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Our Healthcare Services</h2>
+        <p>Comprehensive solutions tailored to your unique healthcare needs</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section class="services py-5">
+    <div class="container">
+      <!-- Service Navigation -->
+      <div class="service-nav mb-5">
+        <ul class="service-tabs">
+          <li hx-get="/services/physical-therapy" hx-target="#service-content" hx-trigger="click" class="active">Physical Therapy</li>
+          <li hx-get="/services/occupational-therapy" hx-target="#service-content" hx-trigger="click">Occupational Therapy</li>
+          <li hx-get="/services/case-management" hx-target="#service-content" hx-trigger="click">Case Management</li>
+          <li hx-get="/services/transportation" hx-target="#service-content" hx-trigger="click">Transportation</li>
+          <li hx-get="/services/dental-case-management" hx-target="#service-content" hx-trigger="click">Dental Case Management</li>
+        </ul>
+      </div>
+      
+      <!-- Service Content (HTMX Target) -->
+      <div id="service-content">
+        <!-- Default content (Physical Therapy) -->
+        <div class="service-detail">
+          <h2 class="text-primary mb-4">Physical Therapy Services</h2>
+          
+          <div class="service-detail-grid">
+            <div class="service-detail-content">
+              <p>Our physical therapy services are designed to help patients recover from injuries, manage chronic conditions, and improve overall physical function. Our experienced physical therapists work closely with each patient to develop personalized treatment plans that address their specific needs and goals.</p>
+              
+              <h3 class="mt-4 mb-3">Our Physical Therapy Services Include:</h3>
+              
+              <ul class="service-list">
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Orthopedic Rehabilitation:</strong> Treatment for musculoskeletal injuries, post-surgical recovery, and chronic conditions affecting bones, joints, muscles, and connective tissues.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Neurological Rehabilitation:</strong> Specialized therapy for patients with neurological conditions such as stroke, traumatic brain injury, Parkinson's disease, and multiple sclerosis.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Sports Injury Rehabilitation:</strong> Targeted treatment for athletes recovering from sports-related injuries, focusing on safe return to activity and injury prevention.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Pain Management:</strong> Evidence-based approaches to reduce pain and improve function, including manual therapy, therapeutic exercises, and modalities.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Balance and Fall Prevention:</strong> Assessment and treatment to improve balance, reduce fall risk, and enhance mobility in older adults and individuals with balance disorders.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Post-Surgical Rehabilitation:</strong> Specialized care following orthopedic, cardiac, or other surgeries to optimize recovery and restore function.
+                </li>
+              </ul>
+              
+              <h3 class="mt-4 mb-3">Our Approach</h3>
+              <p>At May Sue Case Management, our physical therapy approach is patient-centered and evidence-based. We begin with a comprehensive evaluation to assess your condition, functional limitations, and goals. Based on this assessment, we develop a personalized treatment plan that may include:</p>
+              
+              <ul class="service-list">
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Therapeutic Exercises:</strong> Customized exercise programs to improve strength, flexibility, endurance, and function.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Manual Therapy:</strong> Hands-on techniques to mobilize joints, reduce pain, and improve tissue mobility.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Modalities:</strong> Use of physical agents such as heat, cold, electrical stimulation, and ultrasound to manage pain and promote healing.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Functional Training:</strong> Activities that simulate daily tasks to improve your ability to perform routine activities.
+                </li>
+                <li>
+                  <i class="fas fa-check-circle text-secondary"></i>
+                  <strong>Patient Education:</strong> Guidance on self-management strategies, home exercise programs, and injury prevention.
+                </li>
+              </ul>
+              
+              <div class="cta-box mt-5">
+                <h4>Ready to Start Your Recovery Journey?</h4>
+                <p>Contact us today to schedule an initial evaluation with one of our experienced physical therapists.</p>
+                <a href="/#contact" class="btn btn-primary mt-3">Contact Us</a>
+              </div>
+            </div>
+            
+            <div class="service-detail-sidebar">
+              <div class="sidebar-card">
+                <h4>Why Choose Our Physical Therapy Services?</h4>
+                <ul>
+                  <li><i class="fas fa-user-md"></i> Experienced, licensed therapists</li>
+                  <li><i class="fas fa-clipboard-check"></i> Personalized treatment plans</li>
+                  <li><i class="fas fa-hands-helping"></i> One-on-one care</li>
+                  <li><i class="fas fa-chart-line"></i> Evidence-based practices</li>
+                  <li><i class="fas fa-calendar-check"></i> Flexible scheduling</li>
+                </ul>
+              </div>
+              
+              <div class="sidebar-card mt-4">
+                <h4>Insurance Information</h4>
+                <p>We accept most major insurance plans. Contact our office to verify your coverage.</p>
+              </div>
+              
+              <div class="sidebar-testimonial mt-4">
+                <p>"After my knee replacement surgery, I was worried about regaining my mobility. The physical therapy team at May Sue Case Management was incredible. Their expertise and encouragement helped me exceed my recovery goals!"</p>
+                <p class="testimonial-author">- Robert M.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="faq py-5 bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      
+      <div class="faq-container">
+        <div class="faq-item" hx-get="/faq/1" hx-target="this" hx-swap="outerHTML" hx-trigger="click">
+          <div class="faq-question">
+            <h3>What should I expect during my first physical therapy session?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+        </div>
+        
+        <div class="faq-item" hx-get="/faq/2" hx-target="this" hx-swap="outerHTML" hx-trigger="click">
+          <div class="faq-question">
+            <h3>How long will my therapy sessions last?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+        </div>
+        
+        <div class="faq-item" hx-get="/faq/3" hx-target="this" hx-swap="outerHTML" hx-trigger="click">
+          <div class="faq-question">
+            <h3>Do I need a referral to receive physical therapy?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+        </div>
+        
+        <div class="faq-item" hx-get="/faq/4" hx-target="this" hx-swap="outerHTML" hx-trigger="click">
+          <div class="faq-question">
+            <h3>What is the difference between physical therapy and occupational therapy?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+        </div>
+        
+        <div class="faq-item" hx-get="/faq/5" hx-target="this" hx-swap="outerHTML" hx-trigger="click">
+          <div class="faq-question">
+            <h3>How does case management work with therapy services?</h3>
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>May Sue Case Management</h3>
+          <p>Providing exceptional healthcare services to improve quality of life through physical therapy, occupational therapy, and case management.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#testimonials">Testimonials</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#" hx-get="/services/physical-therapy" hx-target="#service-content" hx-push-url="true">Physical Therapy</a></li>
+            <li><a href="#" hx-get="/services/occupational-therapy" hx-target="#service-content" hx-push-url="true">Occupational Therapy</a></li>
+            <li><a href="#" hx-get="/services/case-management" hx-target="#service-content" hx-push-url="true">Case Management</a></li>
+            <li><a href="#" hx-get="/services/transportation" hx-target="#service-content" hx-push-url="true">Transportation</a></li>
+            <li><a href="#" hx-get="/services/dental-case-management" hx-target="#service-content" hx-push-url="true">Dental Case Management</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 1668 Fort St Lincoln Park Mi 48146</li>
+            <li><i class="fas fa-phone"></i> (248) 298-6358</li>
+            <li><i class="fas fa-envelope"></i> maysuemanagement@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 May Sue Case Management. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Custom JS -->
+  <script src="/js/main.js"></script>
+</body>
+</html> 
