@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Ones Health Care - Professional Home Home Care Services</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- HTMX for interactive elements without heavy JavaScript -->
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="love-text">Loved</span> Ones <span class="health-care-text">Home Care</span></h1>
+                <p class="tagline">Compassionate Care in the Comfort of Home</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#payment">Payment Options</a></li>
+                    <li><a href="#contact" class="cta-button">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Professional Home Health Care Services</h2>
+                <p>Providing exceptional care for your loved ones, including accident recovery and daily living assistance.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="primary-button">Request Care</a>
+                    <a href="#services" class="secondary-button">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Activities of Daily Living (ADL)</h3>
+                    <p>Assistance with essential daily activities including bathing, dressing, grooming, meal preparation, and medication reminders.</p>
+                    <a href="#adl-details" class="learn-more" hx-get="templates/adl-details.html" hx-target="#service-details" hx-swap="innerHTML">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Accident Recovery Care</h3>
+                    <p>Specialized care for clients recovering from accidents, including rehabilitation support and mobility assistance.</p>
+                    <a href="#accident-details" class="learn-more" hx-get="templates/accident-details.html" hx-target="#service-details" hx-swap="innerHTML">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>In-Home Health Services</h3>
+                    <p>Professional medical care provided in the comfort of your home, including wound care, vital monitoring, and health assessments.</p>
+                    <a href="#health-details" class="learn-more" hx-get="templates/health-details.html" hx-target="#service-details" hx-swap="innerHTML">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Companion Care</h3>
+                    <p>Emotional support and companionship to reduce isolation and enhance quality of life for your loved ones.</p>
+                    <a href="#companion-details" class="learn-more" hx-get="templates/companion-details.html" hx-target="#service-details" hx-swap="innerHTML">Learn More</a>
+                </div>
+            </div>
+            
+            <div id="service-details" class="service-details">
+                <!-- Service details will be loaded here via HTMX -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About <span class="love-text">Love</span> Ones <span class="health-care-text">Home Care</span></h2>
+                    <p>At <span class="love-text">Love</span> Ones <span class="health-care-text">Home Care</span>, we believe that everyone deserves compassionate, high-quality care in the comfort of their own home. Our team of dedicated professionals is committed to enhancing the quality of life for our clients while providing peace of mind for their families.</p>
+                    <p>With years of experience in home health care, our certified caregivers and medical professionals deliver personalized care plans tailored to each client's unique needs and preferences.</p>
+                    <p>Founded as a family business, we are designed and operated by compassionate individuals with a deep commitment to service. Our owner has extensive experience serving homeless populations, bringing a unique perspective and profound empathy to our care approach. Our organization is professionally managed by experienced healthcare providers who understand the complexities of in-home care.</p>
+                    <div class="values">
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h3>Compassion</h3>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-certificate"></i>
+                            <h3>Excellence</h3>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Integrity</h3>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Respect</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="static/images/caregiver.jpg" alt="Caring professional with elderly client">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment" class="payment">
+        <div class="container">
+            <h2 class="section-title">Payment Options</h2>
+            <p class="section-description">We strive to make our services accessible through various payment options:</p>
+            
+            <div class="payment-options">
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>Auto Insurance</h3>
+                    <p>We accept most major insurance plans. Our staff will assist you in verifying your coverage and benefits.</p>
+                    <button class="info-button" hx-get="templates/insurance-info.html" hx-target="#payment-details" hx-swap="innerHTML">More Info</button>
+                </div>
+                
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Medicare</h3>
+                    <p>We are a Medicare-approved provider for eligible home health services.</p>
+                    <button class="info-button" hx-get="templates/medicare-info.html" hx-target="#payment-details" hx-swap="innerHTML">More Info</button>
+                </div>
+                
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <h3>Medicaid</h3>
+                    <p>We accept Medicaid for qualifying individuals and services.</p>
+                    <button class="info-button" hx-get="templates/medicaid-info.html" hx-target="#payment-details" hx-swap="innerHTML">More Info</button>
+                </div>
+                
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Private Pay</h3>
+                    <p>Flexible private payment options are available for services not covered by insurance.</p>
+                    <button class="info-button" hx-get="templates/private-pay-info.html" hx-target="#payment-details" hx-swap="innerHTML">More Info</button>
+                </div>
+            </div>
+            
+            <div id="payment-details" class="payment-details">
+                <!-- Payment details will be loaded here via HTMX -->
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-slider" hx-get="templates/testimonials.html" hx-trigger="load" hx-swap="innerHTML">
+                <!-- Testimonials will be loaded here via HTMX -->
+                <div class="loading">Loading testimonials...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form hx-post="templates/submit-contact.html" hx-target="#form-response" hx-swap="outerHTML">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select a Service</option>
+                                <option value="adl">Activities of Daily Living</option>
+                                <option value="accident">Accident Recovery Care</option>
+                                <option value="health">In-Home Health Services</option>
+                                <option value="companion">Companion Care</option>
+                                <option value="other">Other (Please specify)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="primary-button">Send Message</button>
+                        </div>
+                    </form>
+                    <div id="form-response"></div>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>1668 Fort St.<br>Lincoln Park, Mi 48146</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(734)890-7463</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>lovedonehomecare@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 8am - 6pm<br>
+                            Saturday: 9am - 3pm<br>
+                            24/7 Emergency Care Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span class="love-text">Love</span> Ones <span class="health-care-text">Home Care</span></h2>
+                    <p>Compassionate Care in the Comfort of Home</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#payment">Payment Options</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#adl-details">Activities of Daily Living</a></li>
+                        <li><a href="#accident-details">Accident Recovery Care</a></li>
+                        <li><a href="#health-details">In-Home Health Services</a></li>
+                        <li><a href="#companion-details">Companion Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span class="love-text">Love</span> Ones <span class="health-care-text">Home Care</span>. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html> 
