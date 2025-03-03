@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="May Sue Case Management - Professional healthcare services including Physical Therapy, Occupational Therapy, and Case Management">
+  <meta name="keywords" content="case management, physical therapy, occupational therapy, healthcare, patient care, rehabilitation">
+  <title>May Sue Case Management | Healthcare Services</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="/images/May_Sue.png" alt="May Sue Case Management Logo">
+        <h1>May Sue Case Management</h1>
+      </div>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Comprehensive Healthcare Solutions</h2>
+        <p>Providing exceptional Physical Therapy, Occupational Therapy, and Case Management services to improve your quality of life.</p>
+        <div>
+          <a href="#services" class="btn btn-primary">Our Services</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Physical Therapy Card -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/images/physical-therapy.jpg" alt="Physical Therapy">
+          </div>
+          <div class="service-content">
+            <h3>Physical Therapy</h3>
+            <p>Our physical therapy services focus on restoring movement and function, reducing pain, and preventing further injury through personalized treatment plans.</p>
+            <div hx-get="/services/physical-therapy" hx-target="#service-details" hx-trigger="click">
+              <button class="btn btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Occupational Therapy Card -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/images/occupational-therapy.jpg" alt="Occupational Therapy">
+          </div>
+          <div class="service-content">
+            <h3>Occupational Therapy</h3>
+            <p>Our occupational therapy services help patients develop, recover, and improve the skills needed for daily living and working after illness or injury.</p>
+            <div hx-get="/services/occupational-therapy" hx-target="#service-details" hx-trigger="click">
+              <button class="btn btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Case Management Card -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/images/case-management.jpg" alt="Case Management">
+          </div>
+          <div class="service-content">
+            <h3>Case Management</h3>
+            <p>Our case management services coordinate healthcare needs, advocate for patients, and ensure access to appropriate resources for optimal outcomes.</p>
+            <div hx-get="/services/case-management" hx-target="#service-details" hx-trigger="click">
+              <button class="btn btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Transportation Card -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/images/transportation.jpg" alt="Transportation Services">
+          </div>
+          <div class="service-content">
+            <h3>Transportation</h3>
+            <p>Our reliable transportation services ensure patients can access their medical appointments and healthcare services without worry or difficulty.</p>
+            <div hx-get="/services/transportation" hx-target="#service-details" hx-trigger="click">
+              <button class="btn btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dental Case Management Card -->
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/images/dental-case-management.jpg" alt="Dental Case Management">
+          </div>
+          <div class="service-content">
+            <h3>Dental Case Management</h3>
+            <p>Our specialized dental case management services coordinate comprehensive oral healthcare, ensuring patients receive appropriate dental treatments and follow-up care.</p>
+            <div hx-get="/services/dental-case-management" hx-target="#service-details" hx-trigger="click">
+              <button class="btn btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Service Details Container (HTMX Target) -->
+      <div id="service-details" class="mt-4"></div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>About May Sue Case Management</h2>
+          <p>May Sue Case Management is a dedicated healthcare provider committed to delivering exceptional care and support to our patients. With years of experience in the healthcare industry, we understand the unique challenges faced by individuals requiring physical therapy, occupational therapy, and case management services.</p>
+          <p>Our team of highly qualified professionals works collaboratively to create personalized treatment plans that address each patient's specific needs and goals. We believe in a holistic approach to healthcare that considers not only physical well-being but also emotional and social factors.</p>
+          
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div>Experienced and certified healthcare professionals</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div>Personalized treatment plans tailored to individual needs</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div>Comprehensive approach to patient care and recovery</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div>Ongoing support and guidance throughout the recovery process</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-img">
+          <img src="/images/about-us.jpg" alt="May Sue Case Management Team">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Patients Say</h2>
+      </div>
+      
+      <div class="testimonial-slider" hx-get="/testimonials" hx-trigger="load" hx-swap="innerHTML">
+        <!-- Testimonials will be loaded here via HTMX -->
+        <div class="testimonial-item">
+          <p class="testimonial-text">"The physical therapy services at May Sue Case Management have been life-changing. After my surgery, I was struggling with mobility, but their dedicated team helped me regain my strength and independence."</p>
+          <p class="testimonial-author">- Sarah Johnson</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>1668 Fort St Lincoln Park Mi 48146</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>(248) 298-6358</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>maysuemanagement@gmail.com</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>Monday - Friday: 8:00 AM - 6:00 PM</div>
+            </div>
+          </div>
+          
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contact-form" hx-post="/submit-contact" hx-target="#form-response" hx-swap="outerHTML">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (Optional)</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div id="form-response"></div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>May Sue Case Management</h3>
+          <p>Providing exceptional healthcare services to improve quality of life through physical therapy, occupational therapy, and case management.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Physical Therapy</a></li>
+            <li><a href="#services">Occupational Therapy</a></li>
+            <li><a href="#services">Case Management</a></li>
+            <li><a href="#services">Transportation</a></li>
+            <li><a href="#services">Dental Case Management</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 1668 Fort St Lincoln Park Mi 48146</li>
+            <li><i class="fas fa-phone"></i> (248) 298-6358</li>
+            <li><i class="fas fa-envelope"></i> maysuemanagement@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 May Sue Case Management. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  <!-- Custom JS -->
+  <script src="/js/main.js"></script>
+</body>
+</html> 
